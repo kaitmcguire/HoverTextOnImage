@@ -1,0 +1,66 @@
+body {
+text-align:center;
+font-family: Tahoma;
+}
+h2 {
+position:absolute;
+top:0;left:0;
+font-size:25px;
+margin:10px 0 0 10px;
+}
+#map {
+position:relative;
+height:459px; /* height of image map */
+width:600px; /* width of image map */
+margin:20px auto;
+border:2px solid #000;
+background:url(https://cdn.pixabay.com/photo/2017/04/02/12/27/dogs-2195708_1280.jpg) no-repeat fixed center;
+background-size: 600px 459px;
+}
+div:hover {
+visibility:visible; /* Fixes IE6 Bug */
+}
+#nose { 
+position:absolute;
+top:355px;
+left:360px;
+height:105px;
+width:100px;
+text-decoration:none;
+color:#000;
+} 
+
+#paw { 
+position:absolute;
+top:350px;
+left:150px;
+height:100px;
+width:188px;
+text-decoration:none;
+color:#000;
+} 
+.hovertext div { 
+position:absolute;
+left:-999em; 
+opacity:.9; /* FX/Opera/Safari/Chrome */
+-ms-filter:"alpha(opacity=60)"; /* IE8 */
+filter:alpha(opacity=60); /* IE6/IE7 */
+border-radius:8px;
+box-shadow:#000 2px 2px 6px;
+} 
+#paw:hover div, #paw:focus div {
+left:-25px;
+top:-50px;
+width:250px;
+padding:10px;  
+border:2px solid #000;
+background:white;
+}
+#nose:hover div, #nose:focus div {
+left:-40px;
+top:-90px;
+width:200px;
+padding:15px;  
+border:2px solid #000;
+background:white;
+}
